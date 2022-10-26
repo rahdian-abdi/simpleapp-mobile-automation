@@ -17,17 +17,17 @@ public class LoginPageSteps extends BaseTest {
 
   @When("user input username {string}")
   public void userInputUsername(String username) {
-    loginPage.inputUsername(username);
+    loginStep.inputUsername(username);
   }
 
   @When("user input password {string}")
   public void userInputPassword(String password) {
-    loginPage.inputPassword(password);
+    loginStep.inputPassword(password);
   }
 
   @When("user click button login")
   public void userClickButtonLogin() {
-    loginPage.clickLoginBtn();
+    loginStep.clickLoginBtn();
   }
 
   @Then("user successfully login")

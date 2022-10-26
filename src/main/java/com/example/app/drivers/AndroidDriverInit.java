@@ -33,10 +33,10 @@ public class AndroidDriverInit {
 //      caps.setCapability(key, data.get(key));
 //    }
 
-//    caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
-//    caps.setCapability(MobileCapabilityType.DEVICE_NAME, "device");
-//    caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-//    caps.setCapability(MobileCapabilityType.APP, "/Users/hendrione/Code/APPS/app-debug_v.1.0.apk");
+    caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
+    caps.setCapability(MobileCapabilityType.DEVICE_NAME, "device");
+    caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
+    caps.setCapability(MobileCapabilityType.APP, "D:\\QA Engineer\\Software Quality Assurance Engineer Path\\Mobile Automation\\apk\\sample-apk.apk");
 //    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
 //    //additional
 //    caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120);
