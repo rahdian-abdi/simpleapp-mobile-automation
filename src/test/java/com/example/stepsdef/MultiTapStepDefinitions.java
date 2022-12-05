@@ -1,4 +1,4 @@
-package com.example.StepsDef;
+package com.example.stepsdef;
 
 import com.example.BaseTest;
 import io.cucumber.java.en.And;

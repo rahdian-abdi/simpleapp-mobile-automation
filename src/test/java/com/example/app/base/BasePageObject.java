@@ -9,6 +9,7 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
@@ -22,14 +23,10 @@ public class BasePageObject {
     return getDriver().findElement(by);
   }
   public void type(By by, String text){
-    AndroidElement element = find(by);
-    element.clear();
-    element.sendKeys(text);
+    find(by).sendKeys(text);
   }
   public void inputNumber(By by, int num) {
-    AndroidElement element = find(by);
-    element.clear();
-    element.sendKeys(Integer.toString(num));
+    find(by).sendKeys(Integer.toString(num));
   }
   public void click(By by){
     find(by).click();
@@ -59,5 +56,9 @@ public class BasePageObject {
   }
   public boolean isEnabled(By by) {
     return find(by).isEnabled();
+  }
+  public void selectDropdown(By by, String text){
+    Select dropDown = new Select(find(by));
+    dropDown.selectByVisibleText(text);
   }
 }

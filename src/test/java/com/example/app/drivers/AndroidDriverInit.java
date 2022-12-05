@@ -27,11 +27,11 @@ public class AndroidDriverInit {
     data.forEach((key,value) -> caps.setCapability(key,value));
 
     //non-lambda
-//    List<String> keys = new ArrayList<>(data.keySet());
-//    for(int i = 0; i < keys.size(); i++){
-//      String key = keys.get(i);
-//      caps.setCapability(key, data.get(key));
-//    }
+    //List<String> keys = new ArrayList<>(data.keySet());
+    //for(int i = 0; i < keys.size(); i++){
+    //String key = keys.get(i);
+    //caps.setCapability(key, data.get(key));
+    //}
 
     caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
     caps.setCapability(MobileCapabilityType.DEVICE_NAME, "device");

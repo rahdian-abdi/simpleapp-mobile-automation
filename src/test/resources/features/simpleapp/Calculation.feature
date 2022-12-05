@@ -36,6 +36,7 @@ Feature: Math Function
     When user click on the drawer
     And user go to list menu
     And long tap on first column
+    And user will get "List ke-1" message toast
 
   Scenario: Verify that multi tap is enabled in List Menu
     Given user is already login

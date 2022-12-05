@@ -1,4 +1,4 @@
-package com.example.app.steps;
+package com.example.steps;
 
 import com.example.app.base.BasePageObject;
 import io.appium.java_client.MobileBy;
@@ -25,6 +25,10 @@ public class CalculatorStep extends BasePageObject {
 //        AndroidElement element = driver.findElement(dropDown);
 //        element.click();
         click(dropDown);
+    }
+    public void selectOperator(String op){
+        final By dropDown = MobileBy.id("com.isl.simpleapp:id/spinner_1");
+        selectDropdown(dropDown, op);
     }
     public void clickPlusOperator() {
         final By add = MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]");

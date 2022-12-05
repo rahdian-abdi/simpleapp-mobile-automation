@@ -1,4 +1,4 @@
-package com.example.hooks;
+package com.example.app.hooks;
 
 import com.example.app.drivers.AndroidDriverInit;
 import io.cucumber.java.After;

@@ -1,4 +1,4 @@
-package com.example.app.pages;
+package com.example.pages;
 
 import com.example.app.base.BasePageObject;
 import io.appium.java_client.MobileBy;

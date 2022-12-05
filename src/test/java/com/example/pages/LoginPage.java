@@ -1,4 +1,4 @@
-package com.example.app.pages;
+package com.example.pages;
 
 import static com.example.app.drivers.AndroidDriverInit.driver;
 
