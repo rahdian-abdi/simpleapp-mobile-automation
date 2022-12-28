@@ -1,7 +1,6 @@
-@android
+@android @login
 Feature: Math Function
   Scenario Outline: Verify that calculation function is working
-    Given user is already login
     When user input number <number1> on angka1 field
     And user input number <number2> on angka2 field
     And user click dropdown operator
@@ -16,13 +15,11 @@ Feature: Math Function
       |10     |2      |/       |5     |
 
   Scenario: Verify that equal button is disabled when field filled by character
-    Given user is already login
     When user input number 1 on angka1 field
     And user input character "s" on angka2 field
     Then user can't click on equal button
 
   Scenario: Verify that equal button is disabled when both field empty
-    Given user is already login
     When user input number 1 on angka1 field
     Then user can't click on equal button
 
@@ -32,14 +29,12 @@ Feature: Math Function
     Then user can't click on sign-in button
 
   Scenario: Verify that long press is enabled in List Menu
-    Given user is already login
     When user click on the drawer
     And user go to list menu
     And long tap on first column
     And user will get "List ke-1" message toast
 
   Scenario: Verify that multi tap is enabled in List Menu
-    Given user is already login
     When user click on the drawer
     And user go to list menu
     And multi tap on first column
